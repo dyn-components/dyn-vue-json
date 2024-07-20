@@ -34,8 +34,14 @@ pnpm add dyn-components --save-dev
 import viteDynComponents from "dyn-components/vite-plugin-dyn-components";
 
 export default defineConfig({
-	viteDynComponents()
+  viteDynComponents()
 })
 ```
 
 ## 快速开始
+
+```vue
+<template>
+  <dyn-json :data="{}"></dyn-json>
+</template>
+```

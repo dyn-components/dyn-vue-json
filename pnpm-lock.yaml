@@ -15,9 +15,6 @@ importers:
         specifier: ^3.4.31
         version: 3.4.33(typescript@5.4.5)
     devDependencies:
-      '@tsconfig/node20':
-        specifier: ^20.1.4
-        version: 20.1.4
       '@types/node':
         specifier: ^20.14.11
         version: 20.14.11
@@ -27,9 +24,6 @@ importers:
       '@vitejs/plugin-vue-jsx':
         specifier: ^4.0.0
         version: 4.0.0(vite@5.3.4(@types/node@20.14.11)(sass@1.77.8))(vue@3.4.33(typescript@5.4.5))
-      '@vue/tsconfig':
-        specifier: ^0.5.1
-        version: 0.5.1
       sass:
         specifier: ^1.77.8
         version: 1.77.8
@@ -564,9 +558,6 @@ packages:
   '@rushstack/ts-command-line@4.17.1':
     resolution: {integrity: sha512-2jweO1O57BYP5qdBGl6apJLB+aRIn5ccIRTPDyULh0KMwVzFqWtw6IZWt1qtUoZD/pD2RNkIOosH6Cq45rIYeg==}
 
-  '@tsconfig/node20@20.1.4':
-    resolution: {integrity: sha512-sqgsT69YFeLWf5NtJ4Xq/xAF8p4ZQHlmGW74Nu2tD4+g5fAsposc4ZfaaPixVu4y01BEiDCWLRDCvDM5JOsRxg==}
-
   '@types/argparse@1.0.38':
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
 
@@ -679,9 +670,6 @@ packages:
 
   '@vue/shared@3.4.33':
     resolution: {integrity: sha512-aoRY0jQk3A/cuvdkodTrM4NMfxco8n55eG4H7ML/CRy7OryHfiqvug4xrCBBMbbN+dvXAetDDwZW9DXWWjBntA==}
-
-  '@vue/tsconfig@0.5.1':
-    resolution: {integrity: sha512-VcZK7MvpjuTPx2w6blwnwZAu5/LgBUtejFOi3pPGQFXQN5Ela03FUtd2Qtg4yWGGissVL0dr6Ro1LfOFh+PCuQ==}
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
@@ -1811,8 +1799,6 @@ snapshots:
       colors: 1.2.5
       string-argv: 0.3.2
 
-  '@tsconfig/node20@20.1.4': {}
-
   '@types/argparse@1.0.38': {}
 
   '@types/estree@1.0.5': {}
@@ -1996,8 +1982,6 @@ snapshots:
       vue: 3.4.33(typescript@5.4.5)
 
   '@vue/shared@3.4.33': {}
-
-  '@vue/tsconfig@0.5.1': {}
 
   ajv@6.12.6:
     dependencies:
