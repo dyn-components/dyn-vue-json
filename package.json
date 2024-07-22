@@ -26,6 +26,7 @@
     "vite-plugin-vue-devtools": "^7.3.6",
     "vue-tsc": "^2.0.24"
   },
+  "author": "wuyuedefeng",
   "description": "",
   "types": "./dist/json.d.ts",
   "main": "./dist/json.es.js",
