@@ -13,7 +13,7 @@ export default defineConfig(async (params: ConfigEnv) => {
     `running mode: ${mode}, command: ${command}, ENV: ${JSON.stringify(ENV)}`
   );
   return {
-    plugins: [vue(), vueJsx(), libInjectCss(), dts({ rollupTypes: true })],
+    plugins: [vue(), vueJsx(), libInjectCss(), dts({ rollupTypes: true, tsconfigPath: resolve(__dirname, './tsconfig.app.json') })],
     define: {
       '__DEV__': mode === 'development', // 自定义开发模式标识
       '__PROD__': mode === 'production', // 自定义生产模式标识

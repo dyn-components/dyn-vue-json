@@ -1,6 +1,5 @@
 # json
 
-
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## 目录
@@ -25,23 +24,58 @@
 ## 安装
 
 ```bash
-pnpm add dyn-components --save-dev
+pnpm add unplugin-vue-components dyn-components --save-dev
 ```
 
 修改 vite.config.js
 
 ```ts
-import viteDynComponents from "dyn-components/vite-plugin-dyn-components";
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import Components from "unplugin-vue-components/vite";
+import { dynVueComponentResolver } from "dyn-components";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  viteDynComponents()
-})
+  plugins: [
+    vue(),
+    Components({
+      resolvers: [dynVueComponentResolver()],
+    }),
+  ],
+  resolve: {
+    alias: {
+      dyn_components: "/dyn_components",
+    },
+  },
+});
 ```
 
 ## 快速开始
 
+```ts
+// global import theme.css
+import "dyn-components/theme.css";
+```
+
 ```vue
 <template>
-  <dyn-json :data="{}"></dyn-json>
+  <dyn-vue-json :data="{ foo: 'bar' }"></dyn-vue-json>
 </template>
 ```
+
+## 属性说明
+
+## 属性（Props）
+
+| 属性名 | 类型     | 默认值 | 必填 | 描述      |
+| ------ | -------- | ------ | ---- | --------- |
+| data   | `Object` | 否     | 是   | json 对象 |
+
+### 详细说明
+
+- **data**
+
+  - 类型: `Object`
+  - 默认值: `否`
+  - 描述: 要可视化展示的数据对象。
