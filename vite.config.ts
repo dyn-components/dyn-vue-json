@@ -34,7 +34,7 @@ export default defineConfig(async (params: ConfigEnv) => {
         scss: {
           charset: false,
           // additionalData: `$injectedColor: orange;`
-          additionalData: `@import "dyn-components/styles/theme.scss";@import "@/assets/styles/globalInjectedScss/index.scss";`
+          additionalData: `@import "dyn-components/theme.scss";@import "@/assets/styles/globalInjectedScss/index.scss";`
         }
         // less: {
         //   modifyVars: {
