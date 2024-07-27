@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       dyn-components:
-        specifier: 0.0.0-alpha.7
-        version: 0.0.0-alpha.7(vite@5.3.4(@types/node@20.14.11)(sass@1.77.8))
+        specifier: 0.0.0-beta.1
+        version: 0.0.0-beta.1(vite@5.3.4(@types/node@20.14.11)(sass@1.77.8))
       vue:
         specifier: ^3.4.31
         version: 3.4.33(typescript@5.4.5)
@@ -995,8 +995,8 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
 
-  dyn-components@0.0.0-alpha.7:
-    resolution: {integrity: sha512-bAzAcoja0r2BCmt+j1gdZdPl1O0fN5A0Zw6Fd0GWbKZzcFVEbmas27jJj0Duz5XeZzaViCkSYE+mD9A2yy/aFQ==}
+  dyn-components@0.0.0-beta.1:
+    resolution: {integrity: sha512-g+n12MWyYg4ES57ZVGW1a7bYYc7R9Vt/NWyQGddKQFCHgjZH5cfjG21k15Vez2gOhihDELxdo4AIfiZXgMMPiA==}
     hasBin: true
     peerDependencies:
       vite: ^5
@@ -2863,7 +2863,7 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
-  dyn-components@0.0.0-alpha.7(vite@5.3.4(@types/node@20.14.11)(sass@1.77.8)):
+  dyn-components@0.0.0-beta.1(vite@5.3.4(@types/node@20.14.11)(sass@1.77.8)):
     dependencies:
       archiver: 7.0.1
       axios: 1.7.2
